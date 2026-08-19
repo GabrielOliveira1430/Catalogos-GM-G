@@ -1,0 +1,136 @@
+
+/* src/styles/responsive.css  */ 
+
+/* ========================================
+   CATALOG
+======================================== */
+
+@media (max-width: 900px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .catalog {
+    padding: 50px 0;
+  }
+
+  .catalog__header h1 {
+    font-size: 32px;
+  }
+}
+
+
+/* ========================================
+   PRODUCT DETAILS
+======================================== */
+
+@media (max-width: 800px) {
+  .product-details {
+    padding: 50px 0;
+  }
+
+  .product-details__grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+
+/* ========================================
+   HERO
+======================================== */
+
+@media (max-width: 600px) {
+  .hero {
+    min-height: 70vh;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+}
+
+
+/* ========================================
+   HEADER — MOBILE
+======================================== */
+
+@media (max-width: 600px) {
+  .site-header__inner {
+    min-height: 68px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .site-header__logo {
+    font-size: 18px;
+  }
+
+  .site-header__menu-button {
+    display: block;
+    width: 42px;
+    height: 42px;
+    border: 0;
+    background: transparent;
+    font-size: 28px;
+    line-height: 1;
+    cursor: pointer;
+  }
+
+  .site-header__nav {
+    display: none;
+    position: static;
+    width: 100%;
+
+    padding: 20px 0;
+    background: var(--color-white);
+    border-bottom: 1px solid #e5e2dc;
+
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .site-header__nav--open {
+    display: flex;
+  }
+
+  .site-header__nav a {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    text-align: center;
+    border-radius: var(--radius-sm);
+  }
+
+  .site-header__nav a:hover {
+    background: #f5f3ef;
+  }
+
+  .site-header__whatsapp {
+    width: 100%;
+    padding: 14px;
+    margin-top: 5px;
+  }
+}
+
+/* src/styles/responsive.css — ADICIONAR no final do arquivo */
+
+/* ========================================
+   HEADER — DESKTOP (nav visível em linha)
+======================================== */
+
+@media (min-width: 601px) {
+  .site-header__nav {
+    display: flex;
+  }
+}

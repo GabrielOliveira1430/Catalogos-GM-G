@@ -1,0 +1,28 @@
+/* =========================
+   src/styles/variables.css
+========================= */
+
+:root {
+  --color-background: #f8f7f4;
+  --color-surface: #ffffff;
+  --color-primary: #222222;
+  --color-primary-hover: #000000;
+  --color-text: #222222;
+  --color-muted: #666666;
+  --color-border: #e5e1db;
+  --color-white: #ffffff;
+
+  --color-accent: #c9a15c;
+  --color-accent-dark: #9c7a3f;
+  --color-accent-soft: #f4ead6;
+
+  --container-width: 1200px;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+
+  --shadow-card: 0 8px 30px rgba(0, 0, 0, 0.06);
+
+  --transition: 0.2s ease;
+}

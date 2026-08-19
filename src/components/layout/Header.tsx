@@ -1,0 +1,95 @@
+/* =========================
+   src/components/layout/Header.tsx
+========================= */
+
+import { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { openWhatsApp } from '../../services/whatsapp';
+
+export function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const menuButtonRef = useRef<HTMLButtonElement>(null);
+
+  function closeMenu() {
+    setMenuOpen(false);
+  }
+
+  useEffect(() => {
+    if (!menuOpen) return;
+
+    function handleKeyDown(event: KeyboardEvent) {
+      if (event.key === 'Escape') {
+        setMenuOpen(false);
+        menuButtonRef.current?.focus();
+      }
+    }
+
+    document.addEventListener('keydown', handleKeyDown);
+    return () => document.removeEventListener('keydown', handleKeyDown);
+  }, [menuOpen]);
+
+  return (
+    <header className="site-header">
+      <div className="container site-header__inner">
+
+        <Link
+          to="/"
+          className="site-header__logo"
+          onClick={closeMenu}
+        >
+          Móveis & Mesas
+        </Link>
+
+        <button
+          ref={menuButtonRef}
+          type="button"
+          className="site-header__menu-button"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label={menuOpen ? 'Fechar menu' : 'Abrir menu'}
+          aria-expanded={menuOpen}
+          aria-controls="site-nav"
+        >
+          {menuOpen ? '×' : '☰'}
+        </button>
+
+        <nav
+          id="site-nav"
+          className={
+            menuOpen
+              ? 'site-header__nav site-header__nav--open'
+              : 'site-header__nav'
+          }
+        >
+          <Link to="/" onClick={closeMenu}>
+            Início
+          </Link>
+
+          <Link to="/catalogo" onClick={closeMenu}>
+            Catálogo
+          </Link>
+
+          <button
+            type="button"
+            className="site-header__whatsapp"
+            onClick={() => {
+              closeMenu();
+              openWhatsApp();
+            }}
+          >
+            <svg
+              viewBox="0 0 32 32"
+              width="18"
+              height="18"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path d="M16.004 3C9.376 3 4 8.373 4 15c0 2.386.7 4.61 1.902 6.476L4 29l7.72-1.867A11.94 11.94 0 0 0 16.004 27C22.63 27 28 21.627 28 15S22.63 3 16.004 3Zm0 21.818a9.77 9.77 0 0 1-4.98-1.363l-.357-.212-4.583 1.108 1.13-4.472-.233-.367A9.77 9.77 0 0 1 5.818 15c0-5.616 4.57-10.182 10.186-10.182 5.615 0 10.185 4.566 10.185 10.182 0 5.616-4.57 10.182-10.185 10.182Zm5.59-7.634c-.306-.153-1.81-.892-2.09-.994-.28-.102-.485-.153-.69.153-.204.306-.79.994-.968 1.198-.178.204-.357.23-.663.077-.306-.153-1.293-.477-2.463-1.522-.91-.812-1.524-1.815-1.703-2.121-.178-.306-.019-.472.134-.624.137-.137.306-.357.459-.535.153-.178.204-.306.306-.51.102-.204.051-.383-.026-.536-.077-.153-.69-1.665-.945-2.28-.249-.6-.502-.518-.69-.528l-.588-.01c-.204 0-.535.077-.816.383-.28.306-1.07 1.046-1.07 2.55 0 1.505 1.096 2.958 1.249 3.163.153.204 2.157 3.294 5.227 4.62.73.315 1.3.503 1.744.643.733.233 1.4.2 1.928.121.588-.088 1.81-.74 2.066-1.454.255-.714.255-1.326.179-1.454-.077-.128-.281-.204-.588-.357Z" />
+            </svg>
+            WhatsApp
+          </button>
+        </nav>
+
+      </div>
+    </header>
+  );
+}
