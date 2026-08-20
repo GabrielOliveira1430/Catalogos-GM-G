@@ -25,6 +25,7 @@ export const products: Product[] = [
     ],
     featured: true,
   },
+
   {
     id: 'mesa-02',
     name: 'Mesa de Jantar Milano',
@@ -45,6 +46,7 @@ export const products: Product[] = [
     ],
     featured: true,
   },
+
   {
     id: 'mesa-03',
     name: 'Mesa de Centro Roma',
@@ -64,5 +66,25 @@ export const products: Product[] = [
       '/imagens/mesas/mesa-03/detalhe-02.jpg',
     ],
     featured: false,
+  },
+
+  {
+    id: 'mesa-04',
+    name: 'Mesa Celeste',
+    slug: 'mesa-celeste',
+    category: 'jantar',
+    description:
+      'Mesa de jantar redonda com 90 cm de diâmetro. Tampo em MDF de 25 mm totalmente laqueado na cor branca, com vidro de 4 mm sobre o tampo. Base em formato cone, totalmente laqueada na cor branca, com pés reguláveis. Altura ajustável entre 75 e 77 cm.',
+    price: 1500,
+    dimensions: {
+      width: 900,
+      depth: 900,
+      height: 760,
+    },
+    images: [
+      '/imagens/mesas/mesa-04/principal.jpg',
+      '/imagens/mesas/mesa-04/detalhe-01.jpg',
+    ],
+    featured: true,
   },
 ];
