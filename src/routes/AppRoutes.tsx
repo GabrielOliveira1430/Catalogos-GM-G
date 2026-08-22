@@ -12,6 +12,7 @@ import { Header } from '../components/layout/Header';
 import { Footer } from '../components/layout/Footer';
 import { WhatsAppButton } from '../components/layout/WhatsAppButton';
 import { ScrollToTop } from '../components/layout/ScrollToTop';
+import { MarqueeBar } from '../components/layout/MarqueeBar';
 import { Home } from '../pages/Home/Home';
 import { Catalog } from '../pages/Catalog/Catalog';
 import { ProductDetails } from '../pages/Product/ProductDetails';
@@ -28,6 +29,7 @@ export function AppRoutes() {
       </a>
 
       <Header />
+      <MarqueeBar />
 
       <Routes>
 

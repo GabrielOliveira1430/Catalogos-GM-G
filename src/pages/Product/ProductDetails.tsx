@@ -10,6 +10,36 @@ import { openWhatsApp } from '../../services/whatsapp';
 import { handleImageError } from '../../utils/image';
 import { ProductCard } from '../../components/catalog/ProductCard';
 
+const TRUST_BADGES = [
+  {
+    label: 'Alto Padrão',
+    icon: (
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.6">
+        <path d="M12 3 4 6v6c0 5 3.4 8.3 8 9 4.6-0.7 8-4 8-9V6l-8-3Z" />
+      </svg>
+    ),
+  },
+  {
+    label: 'Loja Especializada',
+    icon: (
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.6">
+        <path d="M3 9 12 3l9 6" />
+        <path d="M5 9v11h14V9" />
+        <path d="M9 20v-6h6v6" />
+      </svg>
+    ),
+  },
+  {
+    label: 'Compra Segura',
+    icon: (
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.6">
+        <rect x="4" y="10" width="16" height="10" rx="2" />
+        <path d="M8 10V7a4 4 0 0 1 8 0v3" />
+      </svg>
+    ),
+  },
+];
+
 export function ProductDetails() {
   const { slug } = useParams<{ slug: string }>();
 
@@ -57,7 +87,7 @@ export function ProductDetails() {
 
   return (
     <>
-      <main className="product-details">
+      <main id="main-content" className="product-details">
         <div className="container">
 
           <nav className="breadcrumb" aria-label="Caminho de navegação">
@@ -145,6 +175,17 @@ export function ProductDetails() {
               >
                 Tenho interesse no WhatsApp
               </button>
+
+              <ul className="trust-badges">
+                {TRUST_BADGES.map((badge) => (
+                  <li key={badge.label} className="trust-badges__item">
+                    <span className="trust-badges__icon" aria-hidden="true">
+                      {badge.icon}
+                    </span>
+                    <span>{badge.label}</span>
+                  </li>
+                ))}
+              </ul>
 
               <Link to="/catalogo" className="product-details__back">
                 ← Voltar ao catálogo

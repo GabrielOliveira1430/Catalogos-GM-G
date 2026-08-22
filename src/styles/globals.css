@@ -1129,3 +1129,102 @@ select:focus-visible {
     font-size: 26px;
   }
 }
+
+/* =========================
+   MARQUEE BAR (faixa dourada com texto passando)
+========================= */
+
+.marquee-bar {
+  overflow: hidden;
+  background: var(--color-accent);
+  border-bottom: 1px solid var(--color-accent-dark);
+}
+
+.marquee-bar__track {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 88s linear infinite;
+}
+
+.marquee-bar__group {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.marquee-bar__item {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #1a1a1a;
+  white-space: nowrap;
+}
+
+.marquee-bar__dot {
+  margin: 0 24px;
+  opacity: 0.6;
+}
+
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-bar__track {
+    animation: none;
+  }
+}
+/* =========================
+   SELOS DE CONFIANÇA (product details)
+========================= */
+
+.trust-badges {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 22px;
+  padding: 18px 0;
+  list-style: none;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.trust-badges__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  text-align: center;
+  font-size: 12px;
+  color: var(--color-muted);
+  font-weight: 600;
+}
+
+.trust-badges__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--color-accent-soft);
+  color: var(--color-accent-dark);
+}
+
+@media (max-width: 500px) {
+  .trust-badges {
+    gap: 6px;
+  }
+
+  .trust-badges__item {
+    font-size: 11px;
+  }
+}
