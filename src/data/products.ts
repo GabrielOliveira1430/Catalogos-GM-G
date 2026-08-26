@@ -280,8 +280,8 @@ export const products: Product[] = [
   },
   {
     id: 'mesa-19',
-    name: 'Mesa de Jantar Verona',
-    slug: 'mesa-de-jantar-verona-2',
+    name: 'Mesa de Jantar Ravenna',
+    slug: 'mesa-de-jantar-Ravenna',
     category: 'jantar',
     description: 'Mesa de jantar sofisticada, produzida sob medida para seu ambiente.',
     price: 0,
@@ -325,8 +325,8 @@ export const products: Product[] = [
   },
   {
     id: 'mesa-22',
-    name: 'Mesa de Jantar Ravenna',
-    slug: 'mesa-de-jantar-ravenna',
+    name: 'Mesa de Jantar Aurora',
+    slug: 'mesa-de-jantar-Aurora',
     category: 'jantar',
     description: 'Mesa de jantar sofisticada, produzida sob medida para seu ambiente.',
     price: 0,
