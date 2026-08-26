@@ -1229,3 +1229,29 @@ select:focus-visible {
   }
 }
 
+/* =========================
+   HERO BANNER (imagem completa)
+========================= */
+
+.hero-banner {
+  line-height: 0;
+}
+
+.hero-banner img {
+  width: 100%;
+  display: block;
+}
+
+.hero-banner a {
+  display: block;
+  transition: opacity 0.2s ease;
+}
+
+.hero-banner a:hover {
+  opacity: 0.94;
+}
+
+.hero-banner a:focus-visible {
+  outline: 3px solid var(--color-accent-dark);
+  outline-offset: -3px;
+}

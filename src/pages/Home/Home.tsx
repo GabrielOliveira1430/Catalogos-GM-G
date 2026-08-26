@@ -13,29 +13,15 @@ export function Home() {
   return (
     <main id="main-content">
 
-      {/* HERO */}
+      {/* HERO — banner completo */}
 
-      <section className="hero">
-        <div className="container hero__content">
-          <span className="hero__eyebrow">
-            Móveis de qualidade
-          </span>
-          <h1>
-            Mesas que transformam
-            <br />
-            seu ambiente
-          </h1>
-          <p>
-            Encontre modelos modernos,
-            elegantes e feitos para durar.
-          </p>
-          <Link
-            to="/catalogo"
-            className="hero__button"
-          >
-            Ver catálogo
-          </Link>
-        </div>
+      <section className="hero-banner">
+        <Link to="/catalogo" aria-label="Ver catálogo completo">
+          <img
+            src="/imagens/banners/hero-banner.jpg"
+            alt="GM Oficina de Mesas — Design que valoriza cada detalhe. Mesas sob medida para transformar seu ambiente."
+          />
+        </Link>
       </section>
 
       {/* DIFERENCIAIS */}
