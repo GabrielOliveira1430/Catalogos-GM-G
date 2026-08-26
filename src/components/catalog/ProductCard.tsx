@@ -2,7 +2,7 @@
    src/components/catalog/ProductCard.tsx
 ========================= */
 
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import type { Product } from '../../types/product';
 import { openWhatsApp } from '../../services/whatsapp';
@@ -16,18 +16,8 @@ export function ProductCard({ product }: ProductCardProps) {
   const [selectedImage, setSelectedImage] = useState(product.images[0]);
   const [isZoomOpen, setIsZoomOpen] = useState(false);
 
-  useEffect(() => {
-    if (!isZoomOpen) return;
-
-    function handleKeyDown(event: KeyboardEvent) {
-      if (event.key === 'Escape') {
-        setIsZoomOpen(false);
-      }
-    }
-
-    document.addEventListener('keydown', handleKeyDown);
-    return () => document.removeEventListener('keydown', handleKeyDown);
-  }, [isZoomOpen]);
+  const hasDimensions = product.dimensions.width > 0;
+  const hasPrice = product.price > 0;
 
   return (
     <>
@@ -38,7 +28,6 @@ export function ProductCard({ product }: ProductCardProps) {
             alt={product.name}
             onClick={() => setIsZoomOpen(true)}
             onError={handleImageError}
-            loading="lazy"
           />
         </div>
 
@@ -76,17 +65,21 @@ export function ProductCard({ product }: ProductCardProps) {
 
           <p>{product.description}</p>
 
-          <strong className="product-card__dimensions">
-            {product.dimensions.width} × {product.dimensions.depth} ×{' '}
-            {product.dimensions.height} mm
-          </strong>
+          {hasDimensions && (
+            <strong className="product-card__dimensions">
+              {product.dimensions.width} × {product.dimensions.depth} ×{' '}
+              {product.dimensions.height} mm
+            </strong>
+          )}
 
-          <strong className="product-card__price">
-            {product.price.toLocaleString('pt-BR', {
-              style: 'currency',
-              currency: 'BRL',
-            })}
-          </strong>
+          {hasPrice && (
+            <strong className="product-card__price">
+              {product.price.toLocaleString('pt-BR', {
+                style: 'currency',
+                currency: 'BRL',
+              })}
+            </strong>
+          )}
 
           <div className="product-card__actions">
             <Link

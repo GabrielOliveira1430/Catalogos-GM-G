@@ -26,8 +26,7 @@ export const products: Product[] = [
     name: 'Mesa de Jantar Milano',
     slug: 'mesa-de-jantar-milano',
     category: 'jantar',
-    description:
-      'Mesa com design contemporâneo e acabamento sofisticado.',
+    description: 'Mesa com design contemporâneo e acabamento sofisticado.',
     price: 0,
     dimensions: { width: 0, depth: 0, height: 0 },
     images: [
@@ -42,8 +41,7 @@ export const products: Product[] = [
     name: 'Mesa de Jantar Roma',
     slug: 'mesa-de-jantar-roma',
     category: 'jantar',
-    description:
-      'Mesa de jantar elegante e funcional, perfeita para salas modernas.',
+    description: 'Mesa de jantar elegante e funcional, perfeita para salas modernas.',
     price: 0,
     dimensions: { width: 0, depth: 0, height: 0 },
     images: [
@@ -55,10 +53,10 @@ export const products: Product[] = [
   },
   {
     id: 'mesa-04',
-    name: 'Mesa de Jantar Toscana',
-    slug: 'mesa-de-jantar-toscana',
+    name: 'Mesa de Jantar Ária',
+    slug: 'mesa-de-jantar-aria',
     category: 'jantar',
-    description: 'Mesa de jantar sofisticada, produzida sob medida para seu ambiente.',
+    description: 'Linhas leves e delicadas que trazem sofisticação ao seu ambiente.',
     price: 0,
     dimensions: { width: 0, depth: 0, height: 0 },
     images: [
@@ -70,10 +68,10 @@ export const products: Product[] = [
   },
   {
     id: 'mesa-05',
-    name: 'Mesa de Jantar Firenze',
-    slug: 'mesa-de-jantar-firenze',
+    name: 'Mesa de Jantar Flora',
+    slug: 'mesa-de-jantar-flora',
     category: 'jantar',
-    description: 'Mesa de jantar sofisticada, produzida sob medida para seu ambiente.',
+    description: 'Design oval que combina naturalidade e requinte.',
     price: 0,
     dimensions: { width: 0, depth: 0, height: 0 },
     images: [
@@ -88,7 +86,7 @@ export const products: Product[] = [
     name: 'Mesa de Jantar Napoli',
     slug: 'mesa-de-jantar-napoli',
     category: 'jantar',
-    description: 'Mesa de jantar sofisticada, produzida sob medida para seu ambiente.',
+    description: 'Traços clássicos com um toque contemporâneo, feita para durar gerações.',
     price: 0,
     dimensions: { width: 0, depth: 0, height: 0 },
     images: [
@@ -103,7 +101,7 @@ export const products: Product[] = [
     name: 'Mesa de Jantar Veneza',
     slug: 'mesa-de-jantar-veneza',
     category: 'jantar',
-    description: 'Mesa de jantar sofisticada, produzida sob medida para seu ambiente.',
+    description: 'Elegância atemporal inspirada na sofisticação europeia.',
     price: 0,
     dimensions: { width: 0, depth: 0, height: 0 },
     images: [
@@ -118,7 +116,7 @@ export const products: Product[] = [
     name: 'Mesa de Jantar Lucca',
     slug: 'mesa-de-jantar-lucca',
     category: 'jantar',
-    description: 'Mesa de jantar sofisticada, produzida sob medida para seu ambiente.',
+    description: 'Acabamento refinado que valoriza qualquer composição de sala.',
     price: 0,
     dimensions: { width: 0, depth: 0, height: 0 },
     images: [
@@ -130,10 +128,10 @@ export const products: Product[] = [
   },
   {
     id: 'mesa-09',
-    name: 'Mesa de Jantar Siena',
-    slug: 'mesa-de-jantar-siena',
+    name: 'Mesa de Jantar Amora',
+    slug: 'mesa-de-jantar-amora',
     category: 'jantar',
-    description: 'Mesa de jantar sofisticada, produzida sob medida para seu ambiente.',
+    description: 'Tons quentes e formas suaves para um jantar acolhedor.',
     price: 0,
     dimensions: { width: 0, depth: 0, height: 0 },
     images: [
@@ -148,7 +146,7 @@ export const products: Product[] = [
     name: 'Mesa de Jantar Capri',
     slug: 'mesa-de-jantar-capri',
     category: 'jantar',
-    description: 'Mesa de jantar sofisticada, produzida sob medida para seu ambiente.',
+    description: 'Inspirada no litoral mediterrâneo, une leveza e charme.',
     price: 0,
     dimensions: { width: 0, depth: 0, height: 0 },
     images: [
@@ -160,10 +158,10 @@ export const products: Product[] = [
   },
   {
     id: 'mesa-11',
-    name: 'Mesa de Jantar Amalfi',
-    slug: 'mesa-de-jantar-amalfi',
+    name: 'Mesa de Jantar Cecília',
+    slug: 'mesa-de-jantar-cecilia',
     category: 'jantar',
-    description: 'Mesa de jantar sofisticada, produzida sob medida para seu ambiente.',
+    description: 'Design minimalista com presença marcante no ambiente.',
     price: 0,
     dimensions: { width: 0, depth: 0, height: 0 },
     images: [
@@ -175,10 +173,10 @@ export const products: Product[] = [
   },
   {
     id: 'mesa-12',
-    name: 'Mesa de Jantar Bari',
-    slug: 'mesa-de-jantar-bari',
+    name: 'Mesa de Jantar Liz',
+    slug: 'mesa-de-jantar-liz',
     category: 'jantar',
-    description: 'Mesa de jantar sofisticada, produzida sob medida para seu ambiente.',
+    description: 'Compacta e sofisticada, perfeita para espaços contemporâneos.',
     price: 0,
     dimensions: { width: 0, depth: 0, height: 0 },
     images: [
@@ -193,7 +191,7 @@ export const products: Product[] = [
     name: 'Mesa de Jantar Turim',
     slug: 'mesa-de-jantar-turim',
     category: 'jantar',
-    description: 'Mesa de jantar sofisticada, produzida sob medida para seu ambiente.',
+    description: 'Estrutura robusta com acabamento impecável.',
     price: 0,
     dimensions: { width: 0, depth: 0, height: 0 },
     images: [
@@ -205,10 +203,10 @@ export const products: Product[] = [
   },
   {
     id: 'mesa-14',
-    name: 'Mesa de Jantar Pisa',
-    slug: 'mesa-de-jantar-pisa',
+    name: 'Mesa de Jantar Lorenza',
+    slug: 'mesa-de-jantar-lorenza',
     category: 'jantar',
-    description: 'Mesa de jantar sofisticada, produzida sob medida para seu ambiente.',
+    description: 'Curvas suaves que trazem delicadeza ao ambiente.',
     price: 0,
     dimensions: { width: 0, depth: 0, height: 0 },
     images: [
@@ -223,7 +221,7 @@ export const products: Product[] = [
     name: 'Mesa de Jantar Genova',
     slug: 'mesa-de-jantar-genova',
     category: 'jantar',
-    description: 'Mesa de jantar sofisticada, produzida sob medida para seu ambiente.',
+    description: 'Design industrial refinado, com personalidade marcante.',
     price: 0,
     dimensions: { width: 0, depth: 0, height: 0 },
     images: [
@@ -235,10 +233,10 @@ export const products: Product[] = [
   },
   {
     id: 'mesa-16',
-    name: 'Mesa de Jantar Palermo',
-    slug: 'mesa-de-jantar-palermo',
+    name: 'Mesa de Jantar Olívia',
+    slug: 'mesa-de-jantar-olivia',
     category: 'jantar',
-    description: 'Mesa de jantar sofisticada, produzida sob medida para seu ambiente.',
+    description: 'Estilo clean que combina com decorações modernas.',
     price: 0,
     dimensions: { width: 0, depth: 0, height: 0 },
     images: [
@@ -250,10 +248,10 @@ export const products: Product[] = [
   },
   {
     id: 'mesa-17',
-    name: 'Mesa de Jantar Cagliari',
-    slug: 'mesa-de-jantar-cagliari',
+    name: 'Mesa de Jantar Serena',
+    slug: 'mesa-de-jantar-serena',
     category: 'jantar',
-    description: 'Mesa de jantar sofisticada, produzida sob medida para seu ambiente.',
+    description: 'Serenidade em cada detalhe, ideal para jantares especiais.',
     price: 0,
     dimensions: { width: 0, depth: 0, height: 0 },
     images: [
@@ -265,10 +263,10 @@ export const products: Product[] = [
   },
   {
     id: 'mesa-18',
-    name: 'Mesa de Jantar Trieste',
-    slug: 'mesa-de-jantar-trieste',
+    name: 'Mesa de Jantar Milão',
+    slug: 'mesa-de-jantar-milao',
     category: 'jantar',
-    description: 'Mesa de jantar sofisticada, produzida sob medida para seu ambiente.',
+    description: 'Sofisticação urbana traduzida em cada linha do design.',
     price: 0,
     dimensions: { width: 0, depth: 0, height: 0 },
     images: [
@@ -281,9 +279,9 @@ export const products: Product[] = [
   {
     id: 'mesa-19',
     name: 'Mesa de Jantar Ravenna',
-    slug: 'mesa-de-jantar-Ravenna',
+    slug: 'mesa-de-jantar-ravenna',
     category: 'jantar',
-    description: 'Mesa de jantar sofisticada, produzida sob medida para seu ambiente.',
+    description: 'Acabamento artesanal que reflete tradição e qualidade.',
     price: 0,
     dimensions: { width: 0, depth: 0, height: 0 },
     images: [
@@ -295,10 +293,10 @@ export const products: Product[] = [
   },
   {
     id: 'mesa-20',
-    name: 'Mesa de Jantar Padova',
-    slug: 'mesa-de-jantar-padova',
+    name: 'Mesa de Jantar Aveline',
+    slug: 'mesa-de-jantar-aveline',
     category: 'jantar',
-    description: 'Mesa de jantar sofisticada, produzida sob medida para seu ambiente.',
+    description: 'Elegância discreta que valoriza qualquer ambiente.',
     price: 0,
     dimensions: { width: 0, depth: 0, height: 0 },
     images: [
@@ -310,10 +308,10 @@ export const products: Product[] = [
   },
   {
     id: 'mesa-21',
-    name: 'Mesa de Jantar Perugia',
-    slug: 'mesa-de-jantar-perugia',
+    name: 'Mesa de Jantar Mônaco',
+    slug: 'mesa-de-jantar-monaco',
     category: 'jantar',
-    description: 'Mesa de jantar sofisticada, produzida sob medida para seu ambiente.',
+    description: 'Luxo e requinte em um design atemporal.',
     price: 0,
     dimensions: { width: 0, depth: 0, height: 0 },
     images: [
@@ -326,9 +324,9 @@ export const products: Product[] = [
   {
     id: 'mesa-22',
     name: 'Mesa de Jantar Aurora',
-    slug: 'mesa-de-jantar-Aurora',
+    slug: 'mesa-de-jantar-aurora',
     category: 'jantar',
-    description: 'Mesa de jantar sofisticada, produzida sob medida para seu ambiente.',
+    description: 'Inspirada na luz da manhã, traz leveza ao ambiente.',
     price: 0,
     dimensions: { width: 0, depth: 0, height: 0 },
     images: [
@@ -340,10 +338,10 @@ export const products: Product[] = [
   },
   {
     id: 'mesa-23',
-    name: 'Mesa de Jantar Verbania',
-    slug: 'mesa-de-jantar-verbania',
+    name: 'Mesa de Jantar Ísis',
+    slug: 'mesa-de-jantar-isis',
     category: 'jantar',
-    description: 'Mesa de jantar sofisticada, produzida sob medida para seu ambiente.',
+    description: 'Formas escultóricas que se tornam o centro das atenções.',
     price: 0,
     dimensions: { width: 0, depth: 0, height: 0 },
     images: [
@@ -358,7 +356,7 @@ export const products: Product[] = [
     name: 'Mesa de Jantar Bologna',
     slug: 'mesa-de-jantar-bologna',
     category: 'jantar',
-    description: 'Mesa de jantar sofisticada, produzida sob medida para seu ambiente.',
+    description: 'Tradição italiana em cada detalhe do acabamento.',
     price: 0,
     dimensions: { width: 0, depth: 0, height: 0 },
     images: [
@@ -373,7 +371,7 @@ export const products: Product[] = [
     name: 'Mesa de Jantar Como',
     slug: 'mesa-de-jantar-como',
     category: 'jantar',
-    description: 'Mesa de jantar sofisticada, produzida sob medida para seu ambiente.',
+    description: 'Inspirada nos lagos italianos, une simplicidade e beleza.',
     price: 0,
     dimensions: { width: 0, depth: 0, height: 0 },
     images: [
@@ -388,7 +386,7 @@ export const products: Product[] = [
     name: 'Mesa de Jantar Salerno',
     slug: 'mesa-de-jantar-salerno',
     category: 'jantar',
-    description: 'Mesa de jantar sofisticada, produzida sob medida para seu ambiente.',
+    description: 'Design contemporâneo com toques mediterrâneos.',
     price: 0,
     dimensions: { width: 0, depth: 0, height: 0 },
     images: [
@@ -403,7 +401,7 @@ export const products: Product[] = [
     name: 'Mesa de Jantar Ferrara',
     slug: 'mesa-de-jantar-ferrara',
     category: 'jantar',
-    description: 'Mesa de jantar sofisticada, produzida sob medida para seu ambiente.',
+    description: 'Estrutura elegante com acabamento premium.',
     price: 0,
     dimensions: { width: 0, depth: 0, height: 0 },
     images: [
@@ -418,7 +416,7 @@ export const products: Product[] = [
     name: 'Mesa de Jantar Brescia',
     slug: 'mesa-de-jantar-brescia',
     category: 'jantar',
-    description: 'Mesa de jantar sofisticada, produzida sob medida para seu ambiente.',
+    description: 'Sofisticação discreta para ambientes refinados.',
     price: 0,
     dimensions: { width: 0, depth: 0, height: 0 },
     images: [
