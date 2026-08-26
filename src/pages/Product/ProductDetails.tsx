@@ -2,7 +2,7 @@
    src/pages/Product/ProductDetails.tsx
 ========================= */
 
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 
 import { products } from '../../data/products';
@@ -78,13 +78,15 @@ export function ProductDetails() {
     );
   }
 
-  const relatedProducts = products
-    .filter(
-      (item) =>
-        item.category === product.category && item.id !== product.id
-    )
-    .slice(0, 3);
+  const relatedProducts = useMemo(() => {
+  const sameCategory = products.filter(
+    (item) => item.category === product.category && item.id !== product.id
+  );
 
+  const shuffled = [...sameCategory].sort(() => Math.random() - 0.5);
+
+  return shuffled.slice(0, 3);
+}, [product.id, product.category]);
   return (
     <>
       <main id="main-content" className="product-details">
