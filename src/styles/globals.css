@@ -1230,15 +1230,20 @@ select:focus-visible {
 }
 
 /* =========================
-   HERO BANNER (imagem completa)
+   HERO BANNER (imagem completa) — ATUALIZADO
 ========================= */
 
 .hero-banner {
   line-height: 0;
+  max-height: 640px;
+  overflow: hidden;
 }
 
 .hero-banner img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
   display: block;
 }
 
@@ -1254,4 +1259,10 @@ select:focus-visible {
 .hero-banner a:focus-visible {
   outline: 3px solid var(--color-accent-dark);
   outline-offset: -3px;
+}
+
+@media (max-width: 700px) {
+  .hero-banner {
+    max-height: 420px;
+  }
 }
