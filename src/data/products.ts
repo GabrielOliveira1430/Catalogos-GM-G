@@ -384,7 +384,7 @@ export const products: Product[] = [
     name: 'Mesa de Jantar Clara',
     slug: 'mesa-de-jantar-clara',
     category: 'jantar',
-    description: 'Inspirada nos lagos italianos, une simplicidade e beleza.',
+    description: 'Um design elegante e envolvente que traz leveza ao ambiente e torna cada encontro ainda mais especial.',
     price: 0,
     dimensions: { width: 0, depth: 0, height: 0 },
     images: [
