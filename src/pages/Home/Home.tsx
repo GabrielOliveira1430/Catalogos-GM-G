@@ -32,7 +32,7 @@ export function Home() {
           <div className="highlight">
             <span className="highlight__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" strokeWidth="1.6">
-                <path d="M12 21s-7-4.35-9.5-8.5C.7 8.9 2.3 5 6 5c2 0 3.3 1 4 2 0.7-1 2-2 4-2 3.7 0 5.3 3.9 3.5 7.5C19 16.65 12 21 12 21Z" />
+                <path d="M12 21C12 21 4 14.5 4 9.5C4 6.42 6.42 4 9.5 4C11 4 12 4.9 12 4.9C12 4.9 13 4 14.5 4C17.58 4 20 6.42 20 9.5C20 14.5 12 21 12 21Z" />
               </svg>
             </span>
             <h3>Design Exclusivo</h3>

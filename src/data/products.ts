@@ -34,7 +34,7 @@ export const products: Product[] = [
       '/imagens/mesas/mesa-02/detalhe-01.jpg',
       '/imagens/mesas/mesa-02/detalhe-02.jpg',
     ],
-    featured: true,
+    featured: false,
   },
   {
     id: 'mesa-03',
@@ -50,7 +50,7 @@ export const products: Product[] = [
       '/imagens/mesas/mesa-03/detalhe-01.jpg',
       '/imagens/mesas/mesa-03/detalhe-02.jpg',
     ],
-    featured: false,
+    featured: true,
   },
   {
     id: 'mesa-04',
@@ -128,7 +128,7 @@ export const products: Product[] = [
       '/imagens/mesas/mesa-08/detalhe-01.jpg',
       '/imagens/mesas/mesa-08/detalhe-02.jpg',
     ],
-    featured: false,
+    featured: true,
   },
   {
     id: 'mesa-09',
@@ -377,7 +377,7 @@ export const products: Product[] = [
       '/imagens/mesas/mesa-24/detalhe-01.jpg',
       '/imagens/mesas/mesa-24/detalhe-02.jpg',
     ],
-    featured: false,
+    featured: true,
   },
   {
     id: 'mesa-25',
@@ -408,7 +408,7 @@ export const products: Product[] = [
       '/imagens/mesas/mesa-26/detalhe-01.jpg',
       '/imagens/mesas/mesa-26/detalhe-02.jpg',
     ],
-    featured: false,
+    featured: true,
   },
   {
     id: 'mesa-27',
