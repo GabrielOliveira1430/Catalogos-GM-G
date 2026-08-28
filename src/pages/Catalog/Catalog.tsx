@@ -9,6 +9,13 @@ import { ProductGrid } from '../../components/catalog/ProductGrid';
 import { ProductSearch } from '../../components/catalog/ProductSearch';
 import { ProductFilter } from '../../components/catalog/ProductFilter';
 
+function normalizeText(text: string) {
+  return text
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '');
+}
+
 export function Catalog() {
   const [search, setSearch] = useState('');
   const [category, setCategory] = useState('');
@@ -19,10 +26,12 @@ export function Catalog() {
   }, []);
 
   const filteredProducts = useMemo(() => {
+    const normalizedSearch = normalizeText(search);
+
     return products.filter((product) => {
-      const matchesSearch = product.name
-        .toLowerCase()
-        .includes(search.toLowerCase());
+      const matchesSearch = normalizeText(product.name).includes(
+        normalizedSearch
+      );
 
       const matchesCategory = category
         ? product.category === category

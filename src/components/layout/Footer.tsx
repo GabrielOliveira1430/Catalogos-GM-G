@@ -13,6 +13,7 @@ export function Footer() {
 
         <div className="footer__brand">
           <span className="footer__logo">Móveis & Mesas</span>
+
           <p className="footer__tagline">
             Seu estilo, nossa criação.
           </p>
@@ -43,6 +44,10 @@ export function Footer() {
           >
             @gm_oficinamesas
           </a>
+
+          <span className="footer__attendant">
+            Gabriela Oliveira | Atendimento
+          </span>
 
           <a
             href="https://wa.me/5581986539622"

@@ -11,7 +11,7 @@ export const products: Product[] = [
     slug: 'mesa-de-jantar-verona',
     category: 'jantar',
     description:
-      'Mesa de jantar moderna, elegante e resistente, ideal para ambientes residenciais.',
+      'Design marcante e elegância contemporânea para salas de jantar que valorizam presença e sofisticação.',
     price: 0,
     dimensions: { width: 0, depth: 0, height: 0 },
     images: [
@@ -41,7 +41,8 @@ export const products: Product[] = [
     name: 'Mesa de Jantar Gold',
     slug: 'mesa-de-jantar-gold',
     category: 'jantar',
-    description: 'Mesa de jantar elegante e funcional, perfeita para salas modernas.',
+    description:
+      'Elegância e perfeição em cada detalhe, com um toque dourado que transforma seu ambiente.',
     price: 0,
     dimensions: { width: 0, depth: 0, height: 0 },
     images: [
@@ -56,7 +57,8 @@ export const products: Product[] = [
     name: 'Mesa de Jantar Ária',
     slug: 'mesa-de-jantar-aria',
     category: 'jantar',
-    description: 'Linhas leves e delicadas que trazem sofisticação ao seu ambiente.',
+    description:
+      'Leveza no tampo, personalidade na madeira e equilíbrio em cada detalhe.',
     price: 0,
     dimensions: { width: 0, depth: 0, height: 0 },
     images: [
@@ -86,7 +88,8 @@ export const products: Product[] = [
     name: 'Mesa de Jantar Napoli',
     slug: 'mesa-de-jantar-napoli',
     category: 'jantar',
-    description: 'Traços clássicos com um toque contemporâneo, feita para durar gerações.',
+    description:
+      'Imponente na presença, acolhedora na essência — feita para reunir família e amigos em torno de bons momentos.',
     price: 0,
     dimensions: { width: 0, depth: 0, height: 0 },
     images: [
@@ -101,7 +104,8 @@ export const products: Product[] = [
     name: 'Mesa de Jantar Veneza',
     slug: 'mesa-de-jantar-veneza',
     category: 'jantar',
-    description: 'Elegância atemporal inspirada na sofisticação europeia.',
+    description:
+      'Leveza nas formas, presença na medida certa — uma mesa que convida a reunir e compartilhar bons momentos.',
     price: 0,
     dimensions: { width: 0, depth: 0, height: 0 },
     images: [
@@ -131,7 +135,8 @@ export const products: Product[] = [
     name: 'Mesa de Jantar Amora',
     slug: 'mesa-de-jantar-amora',
     category: 'jantar',
-    description: 'Tons quentes e formas suaves para um jantar acolhedor.',
+    description:
+      'A madeira aquece o ambiente e o desenho da base transforma cada refeição em um encontro especial.',
     price: 0,
     dimensions: { width: 0, depth: 0, height: 0 },
     images: [
@@ -146,7 +151,8 @@ export const products: Product[] = [
     name: 'Mesa de Jantar Capri',
     slug: 'mesa-de-jantar-capri',
     category: 'jantar',
-    description: 'Inspirada no litoral mediterrâneo, une leveza e charme.',
+    description:
+      'Linhas envolventes e presença marcante para momentos de conforto, conversa e convivência.',
     price: 0,
     dimensions: { width: 0, depth: 0, height: 0 },
     images: [
@@ -176,7 +182,8 @@ export const products: Product[] = [
     name: 'Mesa de Jantar Liz',
     slug: 'mesa-de-jantar-liz',
     category: 'jantar',
-    description: 'Compacta e sofisticada, perfeita para espaços contemporâneos.',
+    description:
+      'Delicada nas formas e acolhedora na presença, feita para reunir com conforto e leveza.',
     price: 0,
     dimensions: { width: 0, depth: 0, height: 0 },
     images: [
@@ -191,7 +198,8 @@ export const products: Product[] = [
     name: 'Mesa de Jantar Turim',
     slug: 'mesa-de-jantar-turim',
     category: 'jantar',
-    description: 'Estrutura robusta com acabamento impecável.',
+    description:
+      'Presença imponente e formas marcantes para ambientes que valorizam elegância, conforto e personalidade.',
     price: 0,
     dimensions: { width: 0, depth: 0, height: 0 },
     images: [
@@ -221,7 +229,8 @@ export const products: Product[] = [
     name: 'Mesa de Jantar Genova',
     slug: 'mesa-de-jantar-genova',
     category: 'jantar',
-    description: 'Design industrial refinado, com personalidade marcante.',
+    description:
+      'Presença marcante, madeira envolvente e proporções generosas para uma sala de jantar que convida a celebrar.',
     price: 0,
     dimensions: { width: 0, depth: 0, height: 0 },
     images: [
@@ -266,7 +275,8 @@ export const products: Product[] = [
     name: 'Mesa de Jantar Milão',
     slug: 'mesa-de-jantar-milao',
     category: 'jantar',
-    description: 'Sofisticação urbana traduzida em cada linha do design.',
+    description:
+      'Um desenho elegante e acolhedor, feito para aproximar pessoas e tornar cada encontro especial.',
     price: 0,
     dimensions: { width: 0, depth: 0, height: 0 },
     images: [
@@ -281,7 +291,8 @@ export const products: Product[] = [
     name: 'Mesa de Jantar Ravenna',
     slug: 'mesa-de-jantar-ravenna',
     category: 'jantar',
-    description: 'Acabamento artesanal que reflete tradição e qualidade.',
+    description:
+      'A beleza natural da madeira em formas orgânicas, criando um ambiente acolhedor para estar e compartilhar.',
     price: 0,
     dimensions: { width: 0, depth: 0, height: 0 },
     images: [
@@ -326,7 +337,8 @@ export const products: Product[] = [
     name: 'Mesa de Jantar Aurora',
     slug: 'mesa-de-jantar-aurora',
     category: 'jantar',
-    description: 'Inspirada na luz da manhã, traz leveza ao ambiente.',
+    description:
+      'Um equilíbrio entre leveza e aconchego, pensado para receber e compartilhar bons momentos.',
     price: 0,
     dimensions: { width: 0, depth: 0, height: 0 },
     images: [
@@ -356,7 +368,8 @@ export const products: Product[] = [
     name: 'Mesa de Jantar Lótus',
     slug: 'mesa-de-jantar-lotus',
     category: 'jantar',
-    description: 'Tradição italiana em cada detalhe do acabamento.',
+    description:
+      'Imponência e personalidade para reuniões que pedem um ambiente à altura.',
     price: 0,
     dimensions: { width: 0, depth: 0, height: 0 },
     images: [
@@ -386,7 +399,8 @@ export const products: Product[] = [
     name: 'Mesa de Jantar Júlia',
     slug: 'mesa-de-jantar-julia',
     category: 'jantar',
-    description: 'Design contemporâneo com toques mediterrâneos.',
+    description:
+      'Uma presença elegante e acolhedora, feita para reunir, compartilhar e celebrar. Simplesmente perfeita!',
     price: 0,
     dimensions: { width: 0, depth: 0, height: 0 },
     images: [
